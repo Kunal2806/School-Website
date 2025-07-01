@@ -5,8 +5,12 @@
   --font-Lato: "Lato"
 }
 
+body{
+  cursor: default
+}
+
 .hoverNav > li:hover {
-  color: #d82618;
   text-decoration: underline;
   text-underline-offset: 6px;
+  cursor: pointer
 }

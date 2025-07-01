@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import { Link } from "react-router-dom";
 function Nav() {
     const [navDrop, setnavDrop] = useState("");
 
@@ -12,17 +12,24 @@ function Nav() {
         {/* <div className="h-[40px] w-full bg-[#de231c]">
             
         </div> */}
-        <div className="m-auto flex gap-20 items-center justify-center my-2" onClick={()=>{navDrop!=="" && activeNavDrop("")}}>
-            <div className="h-[80px] ">
-                <img className="h-full object-cover" src="./images/logo.png" alt="Vivekanand" />
+        <div className=" m-auto flex flex-col items-center justify-center my-2" onClick={()=>{navDrop!=="" && activeNavDrop("")}}>
+            <div className="w-full flex justify-between px-5">
+                <div className="h-[100px] w-full flex items-start">
+                    <img className="h-full object-cover " src="./images/logo.png" alt="Vivekanand" />
+                    <h1 className="h-full flex flex-col justify-center pl-4">
+                        <p className="font-extrabold text-4xl text-[#1c2b4a]">Vivekanand Shikshan Sansthan</p>
+                        <p className="text-xl mt-1 text-[#1c2b4a]">Affiliated to Central Board of Secondary Education (CBSE)</p>
+                    </h1>
+                </div>
             </div>
-            <ul className=" hoverNav flex gap-15 font-Lato font-bold text-md text-[#1c2b4a]">
-                <li>Home</li>
-                <li>About Us</li>
-                <li><span className="flex flex-cols" onClick={()=>{activeNavDrop("projectDescription")}}> Project Description <svg className="-rotate-90" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1C2C46"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></span> 
+            
+            <ul className=" hoverNav w-full flex itmes-center gap-15 font-Lato justify-center font-bold text-md text-white mt-2 bg-[#1c2b4a] py-2 ">
+                <li><Link to='/'>Home</Link></li>
+                <li> <Link to="/about">About Us</Link></li>
+                <li><span className="flex flex-cols" onClick={()=>{activeNavDrop("projectDescription")}}> Project Description <svg className="-rotate-90" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></span> 
                     {
                         navDrop==="projectDescription" && 
-                        <ul className="absolute font-normal hoverNav text-[#1c2b4a]">
+                        <ul className="p-3 absolute font-normal hoverNav text-[#1c2b4a] py-2 z-11 px-1 bg-white rounded-md">
                         <li>Education</li>
                         <li>Livelihood Program</li>
                         <li>Environment</li>
@@ -32,18 +39,18 @@ function Nav() {
                     </ul>
                     }
                 </li>
-                <li> <span className="flex flex-cols" onClick={()=>{activeNavDrop("mediaCenter")}}> Media Center <svg className="-rotate-90" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1C2C46"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></span> 
+                <li> <span className="flex flex-cols" onClick={()=>{activeNavDrop("mediaCenter")}}> Media Center <svg className="-rotate-90" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></span> 
                     {
                         navDrop==="mediaCenter"&&
-                        <ul className="absolute font-normal hoverNav text-[#1c2b4a]">
+                        <ul className="p-3 absolute font-normal hoverNav text-[#1c2b4a] bg-white py-2 px-1 rounded-md z-11">
                         <li>Events & News</li>
                         <li>Gallery</li>
                     </ul>
                     }
                 </li>
                 <li>Our Team</li>
-                <li>Support Us</li>
-                <li>Contact Us</li>
+                <li> <Link to='/support'>Support Us</Link> </li>
+                <li> <Link to='/contact'>Contact Us</Link></li>
             </ul>
         </div>
     </>
