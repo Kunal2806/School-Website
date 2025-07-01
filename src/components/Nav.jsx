@@ -24,7 +24,7 @@ function Nav() {
                         <p className="md:text-xl text-sm mt-1 text-[#1c2b4a]">Affiliated to Central Board of Secondary Education (CBSE)</p>
                     </h1>
                 </div>
-                <div className="flex items-center visible md:hidden" onClick={clickToggleButton}>
+                <div className=" cursor-pointer flex items-center visible md:hidden" onClick={clickToggleButton}>
                     {
                         !toggleButton?
                         <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="24px" fill="#1C2C46"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>

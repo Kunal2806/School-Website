@@ -35,13 +35,13 @@ const Slider = () => {
 
       <button
         onClick={prevSlide}
-        className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/70 hover:bg-white text-black px-3 py-1 rounded-full shadow text-xl sm:text-2xl"
+        className="cursor-pointer absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/70 hover:bg-white text-black px-3 py-1 rounded-full shadow text-xl sm:text-2xl"
       >
         {"<"}
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/70 hover:bg-white text-black px-3 py-1 rounded-full shadow text-xl sm:text-2xl"
+        className=" cursor-pointer absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/70 hover:bg-white text-black px-3 py-1 rounded-full shadow text-xl sm:text-2xl"
       >
         {">"}
       </button>
