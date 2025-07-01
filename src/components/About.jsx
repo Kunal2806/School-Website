@@ -25,7 +25,9 @@ function About() {
         <div className=" py-10 px-4 md:px-12">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
-            <h2 className="text-2xl font-bold text-[#1c2b4a] mb-4">📌 Address</h2>
+            <h2 className="text-2xl font-bold text-[#1c2b4a] mb-4 flex items-center gap-1">
+                <img className="h-[30px]" src="./images/location.svg" alt="" />
+               Address </h2>
             <p className="text-gray-700 leading-relaxed">
                 <span className="font-semibold">Vivekanand Sr Sec School Pindwara</span> 
                  , <br/>Near Power House, Rj Sh 62, Swami Vivekanand Colony, Forest Colony, Pindwara-307022
@@ -33,7 +35,9 @@ function About() {
             </div>
 
             <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
-            <h2 className="text-2xl font-bold text-[#1c2b4a] mb-4">☎ Contact</h2>
+            <h2 className="text-2xl font-bold text-[#1c2b4a] mb-4 flex items-center gap-1"> 
+              <img className="h-[24px]" src="./images/contact.svg" alt="" />
+            Contact</h2>
             <p className="text-gray-700 leading-relaxed">
                 <span className="font-semibold">Mobile</span>:- 9982109201,9414448254 <br/>
                 <span className="font-semibold">Email</span>:- vsspindwara@gmail.com
