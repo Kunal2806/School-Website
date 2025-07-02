@@ -12,6 +12,9 @@ import Environment from "./components/projectDescription/Environment"
 import WomenEmpowerment from "./components/projectDescription/WomenEmpower"
 import TribalDevelopment from "./components/projectDescription/TribalRegion"
 import Medical from "./components/projectDescription/Medical"
+import News from "./components/Media/News"
+import Gallery from "./components/Media/Gallery"
+import Admin from "./components/Media/Admin"
 
 function App() {
   return (
@@ -22,12 +25,15 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/support" element={<Support/>} />
           <Route path="/contact" element={<Contact/>} />
-          <Route path="/project/education" element={<Education/>} />
-          <Route path="/project/livelihood" element={<LivelihoodProgramme/>} />
-          <Route path="/project/environment" element={<Environment/>} />
-          <Route path="/project/womenempowerment" element={<WomenEmpowerment/>} />
-          <Route path="/project/tribalregion" element={<TribalDevelopment/>} />
-          <Route path="/project/medical" element={<Medical/>} />
+          <Route path="/education" element={<Education/>} />
+          <Route path="/livelihood" element={<LivelihoodProgramme/>} />
+          <Route path="/environment" element={<Environment/>} />
+          <Route path="/womenempowerment" element={<WomenEmpowerment/>} />
+          <Route path="/tribalregion" element={<TribalDevelopment/>} />
+          <Route path="/medical" element={<Medical/>} />
+          <Route path="/news" element={<News/>} />
+          <Route path="/gallery" element={<Gallery/>} />
+          <Route path="/admin" element={<Admin/>} />
         </Routes>
       
       <Footer/>
