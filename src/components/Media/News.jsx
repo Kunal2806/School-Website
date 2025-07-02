@@ -6,7 +6,7 @@ const News = () => {
 
   useEffect(() => {
     
-    axios.get("http://localhost:5000/get")
+    axios.get("http://localhost:5000/news")
     .then(res=> setNews(res.data))
     .catch(err=> console.log(err))
   }, [])
